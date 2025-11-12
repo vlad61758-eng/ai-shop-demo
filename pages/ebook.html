@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Книга: Вступ до SMM 2024 - Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header class="p-4 bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center max-w-7xl">
+            <!-- Посилання на головну сторінку магазину (index.html, який знаходиться на рівень вище) -->
+            <a href="../index.html" class="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition duration-300">AI-Drafts</a>
+            <nav>
+                <a href="#about" class="mx-2 text-gray-600 hover:text-indigo-600 transition duration-300">Про Книгу</a>
+                <a href="#buy" class="mx-2 text-gray-600 hover:text-indigo-600 transition duration-300">Купити</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-indigo-600 text-white">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between max-w-7xl px-4">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-5xl font-extrabold leading-tight mb-4">
+                    "Вступ до SMM 2024": Створено за 5 хвилин завдяки AI
+                </h1>
+                <p class="text-xl mb-6 opacity-80">
+                    Економте тижні на дослідженні! Отримайте чорновик (Draft) 20-сторінкової книги, згенерований нейромережею, який ви можете адаптувати, відредагувати та продавати.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button id="buy-button-hero" class="bg-yellow-400 text-indigo-900 font-bold py-3 px-8 rounded-xl shadow-lg hover:bg-yellow-300 transition duration-300 transform hover:scale-105">
+                        Завантажити за $12.99
+                    </button>
+                    <a href="#features" class="inline-block border border-white text-white font-semibold py-3 px-8 rounded-xl hover:bg-white hover:text-indigo-600 transition duration-300">
+                        Дізнатись більше
+                    </a>
+                </div>
+            </div>
+            <!-- Mockup Placeholder -->
+            <div class="md:w-1/3">
+                <div class="bg-white p-6 rounded-xl shadow-2xl text-center text-gray-800">
+                    <img src="https://placehold.co/400x550/4f46e5/ffffff?text=3D+Mockup+E-book" alt="Mockup AI E-book" class="rounded-lg shadow-xl mx-auto mb-4" onerror="this.onerror=null; this.src='https://placehold.co/400x550/4f46e5/ffffff?text=E-book+Cover'">
+                    <p class="font-semibold text-lg">Шаблон DOCX + PDF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto max-w-7xl px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Чому AI Draft?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-gray-100 rounded-xl shadow-lg">
+                    <svg class="w-10 h-10 text-indigo-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">Економія Часу</h3>
+                    <p class="text-gray-600">Отримайте структуру та 80% контенту миттєво. Залишається лише фінальне редагування.</p>
+                </div>
+                <div class="text-center p-6 bg-gray-100 rounded-xl shadow-lg">
+                    <svg class="w-10 h-10 text-indigo-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002.944 12c-.135 2.148.472 4.298 1.838 6.002s3.23 3.018 5.485 3.397A11.955 11.955 0 0112 21.056a11.955 11.955 0 018.618-3.04 12.001 12.001 0 001.056-5.004c.135-2.148-.472-4.298-1.838-6.002z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">Висока Якість</h3>
+                    <p class="text-gray-600">Створено на базі передових LLM для актуальності та професійного тону.</p>
+                </div>
+                <div class="text-center p-6 bg-gray-100 rounded-xl shadow-lg">
+                    <svg class="w-10 h-10 text-indigo-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l-4 16m-4-4l4-16m4 4l-4 16m-4-4l4-16"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2">Повний DOCX</h3>
+                    <p class="text-gray-600">Шаблон у форматі .docx, готовий для вашого брендування та доопрацювання.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-8 bg-gray-800 text-white">
+        <div class="container mx-auto text-center max-w-7xl">
+            <p class="text-sm">© 2024 AI-Drafts. Всі права захищені. Цифровий товар для вашого бізнесу.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('buy-button-hero').addEventListener('click', () => {
+            alertMessage('Дякуємо за покупку! Посилання на завантаження відправлено на вашу пошту (імітація покупки).');
+        });
+
+        function alertMessage(message) {
+            const container = document.createElement('div');
+            container.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+            container.innerHTML = `
+                <div class="bg-white p-6 rounded-xl shadow-2xl max-w-sm w-full text-center">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-4">Повідомлення</h3>
+                    <p class="text-gray-700 mb-6">${message}</p>
+                    <button onclick="this.parentElement.parentElement.remove()" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">
+                        Закрити
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(container);
+        }
+    </script>
+</body>
+</html>
